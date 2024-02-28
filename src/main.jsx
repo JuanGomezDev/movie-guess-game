@@ -1,9 +1,15 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './pages/App';
+import GuessMovie from './pages/GuessMovie';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <GuessMovie />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+  <RouterProvider router={router} />
+);
