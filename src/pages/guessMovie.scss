@@ -1,0 +1,79 @@
+// Estilos componente GuessMovie
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+
+@mixin fontStyle {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    @include fontStyle;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 100px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+
+        h1 {
+            font-size: 48px;
+            letter-spacing: 12px;
+            color: rgb(212, 145, 19);
+        }
+
+        // Span emojis
+        span {
+            font-size: 60px;
+        }
+
+        // Action
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+
+            input, button {
+                border-radius: 20px;
+                border: none;
+                height: 30px;
+            }
+            input {
+                font-weight: bold;
+                font-size: 18px;
+                padding: 0px 15px;
+                width: 280px;
+            }
+
+            button {
+                width: 80px;
+                cursor: pointer;
+                background-color: rgb(67, 205, 40);
+                color: white;
+                @include fontStyle;
+                
+                &:active {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,176 @@
+{
+    "movies": [
+        {
+            "name": "Forrest Gump",
+            "emojis": "🏃🍫🍤"
+        },
+        {
+            "name": "Matrix",
+            "emojis": "🕶️💊👽"
+        },
+        {
+            "name": "Titanic",
+            "emojis": "🚢❄️💔"
+        },
+        {
+            "name": "Parque Jurásico",
+            "emojis": "🦖🌴🚙"
+        },
+        {
+            "name": "El Rey León",
+            "emojis": "🦁👑🌅"
+        },
+        {
+            "name": "La Guerra de las Galaxias",
+            "emojis": "⚔️🚀🌌"
+        },
+        {
+            "name": "Los Vengadores",
+            "emojis": "🦸‍♂️🦸‍♀️💥"
+        },
+        {
+            "name": "Harry Potter",
+            "emojis": "⚡🧙‍♂️🔮"
+        },
+        {
+            "name": "El Exterminador",
+            "emojis": "🤖🔫🕶️"
+        },
+        {
+            "name": "Indiana Jones",
+            "emojis": "🤠🔍💎"
+        },
+        {
+            "name": "Regreso al Futuro",
+            "emojis": "⏰🚗💥"
+        },
+        {
+            "name": "Sueño de Fuga",
+            "emojis": "🔒🔑💰"
+        },
+        {
+            "name": "El Padrino",
+            "emojis": "🍕🤵🔫"
+        },
+        {
+            "name": "El Caballero Oscuro",
+            "emojis": "🦇♞👨‍🦯"
+        },
+        {
+            "name": "Tiempos Violentos",
+            "emojis": "🍔🔫🕶️"
+        },
+        {
+            "name": "La Lista de Schindler",
+            "emojis": "📜🚂🔴"
+        },
+        {
+            "name": "El Señor de los Anillos: El Retorno del Rey",
+            "emojis": "🧝‍♂️🧙‍♂️🗡️"
+        },
+        {
+            "name": "El Silencio de los Corderos",
+            "emojis": "🔇🐑🍖"
+        },
+        {
+            "name": "Club de la Pelea",
+            "emojis": "👊💼🚽"
+        },
+        {
+            "name": "Origen",
+            "emojis": "🌀👩‍🚀🎩"
+        },
+        {
+            "name": "El Rey Arturo",
+            "emojis": "🗡️👑🌊"
+        },
+        {
+            "name": "La Bella y la Bestia",
+            "emojis": "👸🥀🦁"
+        },
+        {
+            "name": "La Sirenita",
+            "emojis": "🧜‍♀️🌊🦀"
+        },
+        {
+            "name": "El Mago de Oz",
+            "emojis": "👠🌈🌪️"
+        },
+        {
+            "name": "Blancanieves y los Siete Enanitos",
+            "emojis": "👸🍎🧝‍♂️"
+        },
+        {
+            "name": "Peter Pan",
+            "emojis": "🧚‍♂️⏰🏴‍☠️"
+        },
+        {
+            "name": "La Dama y el Vagabundo",
+            "emojis": "🐶🍝🎀"
+        },
+        {
+            "name": "101 Dálmatas",
+            "emojis": "🐶🐾❤️"
+        },
+        {
+            "name": "Toy Story",
+            "emojis": "🤠🚀🧸"
+        },
+        {
+            "name": "Buscando a Nemo",
+            "emojis": "🔍🐠🐟"
+        },
+        {
+            "name": "El Rey León",
+            "emojis": "🦁👑🌅"
+        },
+        {
+            "name": "La Bella Durmiente",
+            "emojis": "👸😴🏰"
+        },
+        {
+            "name": "Aladdin",
+            "emojis": "🕌🧞‍♂️💍"
+        },
+        {
+            "name": "El Jorobado de Notre Dame",
+            "emojis": "🎭🔔📘"
+        },
+        {
+            "name": "Mulan",
+            "emojis": "🗡️👘🐉"
+        },
+        {
+            "name": "La Cenicienta",
+            "emojis": "👸👠🎃"
+        },
+        {
+            "name": "Bambi",
+            "emojis": "🦌🦉🍂"
+        },
+        {
+            "name": "La Dama y el Vagabundo",
+            "emojis": "🐶🍝🎀"
+        },
+        {
+            "name": "La Sirenita",
+            "emojis": "🧜‍♀️🌊🦀"
+        },
+        {
+            "name": "Hércules",
+            "emojis": "⚡🏛️🔱"
+        },
+        {
+            "name": "Tarzán",
+            "emojis": "🦍🌴🍃"
+        },
+        {
+            "name": "Ratatouille",
+            "emojis": "🐭🍲🍽️"
+        },
+        {
+            "name": "Cars",
+            "emojis": "🚗🏁🏎️"
+        }
+    ]
+}
