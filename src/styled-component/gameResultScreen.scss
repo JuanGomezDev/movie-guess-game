@@ -1,6 +1,6 @@
-// Estilos componente GameOver
+// Estilos componente GameResultScreen
 
-.game-over {
+.game-result {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,6 @@
     width: 100vw;
     height: 100vh;
     margin: -20px -40px;
-    background-color: #cb5641c6;
     color: white;
     font-size: 60px;
 }
