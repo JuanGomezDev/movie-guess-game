@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import moviesData from '../data/movies.data.json';
 import './guessMovie.scss';
 import Answer from '../components/Answer';
+import GameOver from '../components/GameOver';
 
 
 export default function GuessMovie() {
@@ -11,22 +12,26 @@ export default function GuessMovie() {
     const [points, setPoints] = useState(0);
     const [inputMovie, setInputMovie] = useState('');
     const [currentMovie, setCurrentMovie] = useState();
-    // useRef
+    const [gameOver, setGameOver] = useState(false);
 
-    // Validaciones a partir del Answer
+    // Validaciones
     const handleAnswer = () => {
-        console.log(inputMovie);
-        let adivino;
+        if (lives === 1) {
+            setGameOver(true);
+        }
+
+        const capitalCurrentMovie = currentMovie.name.toUpperCase();
+        const capitalInputMovie = inputMovie.toUpperCase();
+
+        let adivino = capitalInputMovie === capitalCurrentMovie;
+
         if (adivino) {
-            setCurrentMovie(movies[randomMovieIndex]);
+            setPoints((prePoints) => prePoints + 1)
+            setCurrentMovie(movies[randomMovieIndex])
         } else {
-            setLives((preLives) => preLives--)
-            setPoints((prePoints) => prePoints--)
+            setLives((preLives) => preLives - 1)
         }
     }
-
-
-
 
     useEffect(() => {
         setCurrentMovie(movies[randomMovieIndex]);
@@ -44,6 +49,8 @@ export default function GuessMovie() {
     console.log(currentMovie);
     return (
         <>
+        {gameOver && <GameOver />}
+        
         <header>
             <h2>Lives: {lives}</h2>
             <h2>Points: {points}</h2>
