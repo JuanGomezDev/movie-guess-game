@@ -14,23 +14,24 @@ export default function GuessMovie() {
     const [currentMovie, setCurrentMovie] = useState();
     const [gameOver, setGameOver] = useState(false);
 
-    // Validaciones
-    const handleAnswer = () => {
-        if (lives === 1) {
+    // Al llegar a 0 vidas, activar componente GameOver
+    useEffect(() => {
+        if (lives === 0) {
             setGameOver(true);
         }
+    }, [lives]);
 
+    // Validaciones de puntos y vidas
+    const handleAnswer = () => {
         const capitalCurrentMovie = currentMovie.name.toUpperCase();
         const capitalInputMovie = inputMovie.toUpperCase();
 
-        let adivino = capitalInputMovie === capitalCurrentMovie;
+        capitalInputMovie === capitalCurrentMovie 
+            ? setPoints((prePoints) => prePoints + 1) 
+            : setLives((preLives) => preLives - 1)
+        ;
 
-        if (adivino) {
-            setPoints((prePoints) => prePoints + 1)
-            setCurrentMovie(movies[randomMovieIndex])
-        } else {
-            setLives((preLives) => preLives - 1)
-        }
+        setCurrentMovie(movies[randomMovieIndex])
     }
 
     useEffect(() => {
