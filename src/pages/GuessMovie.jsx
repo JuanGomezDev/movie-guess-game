@@ -3,6 +3,9 @@ import moviesData from '../data/movies.data.json';
 import './guessMovie.scss';
 import Answer from '../components/Answer';
 import GameResultScreen from '../components/GameResultScreen';
+import MovieTitle from '../components/MovieTitle';
+import LivesCount from '../components/LivesCount';
+import PointsCount from '../components/PointsCount';
 
 
 export default function GuessMovie() {
@@ -68,13 +71,13 @@ export default function GuessMovie() {
             {gameResult && <GameResultScreen result={resultText} />}
 
             <header>
-                <h2>Lives: {lives}</h2>
-                <h2>Points: {points}</h2>
+                <LivesCount lives={lives}/>
+                <PointsCount points={points}/>
             </header>
 
             <main>
                 <h1>Guess the Movie</h1>
-                <span>{currentMovie && currentMovie.emojis}</span>
+                <MovieTitle currentMovie={currentMovie}/>
 
                 <Answer inputMovie={inputMovie} setInputMovie={setInputMovie} handleAnswer={handleAnswer} />
             </main>
